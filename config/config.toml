@@ -10,13 +10,13 @@
     UserDesc = "永远在学习路上奔波的码农"
 [system]
     CdnURL = "http://localhost:8080/resource"
-    QiniuAccessKey = "fh-AhOh1ZEpmH11bvg7AW5tWNHAXOI8vRXdvgRKU"
-    QiniuSecretKey = "BGij81JZRkTnMNI-fWPlV9WV1n246yOkG92hsMfG"
+    QiniuAccessKey = "AccessKey"
+    QiniuSecretKey = "SecretKey"
     Valine = true
-    ValineAppid = "nlqUg9SbHY99DFq5cg2PPz6Z-gzGzoHsz"
-    ValineAppkey = "RgeUgN5TfmDSA7zQgV6eX4Su"
+    ValineAppid = "Appid"
+    ValineAppkey = "Appkey"
     ValineServerURL = "https://nlqug9sb.lc-cn-n1-shared.com"
 [redis]
-    Addr = "159.75.137.185:6379"
-    Password = "Elysia233"
+    Addr = "ip:port"
+    Password = "password"
     DataBase = 2
