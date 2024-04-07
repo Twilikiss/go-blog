@@ -1,0 +1,22 @@
+[viewer]
+    Title = "Elysia博客测试"
+    Description = "测试博客相关操作"
+    Logo = "http://localhost:8080/resource/images/logo.png"
+    Navigation = ["首页","/", "GO语言","/golang", "归档","/pigeonhole", "关于","/about"]
+    Bilibili = "https://space.bilibili.com/316733119"
+    Zhihu = "https://juejin.cn/user/2318219817532487"
+    Avatar = "https://p26-passport.byteacctimg.com/img/user-avatar/264fff3df4d95a25bdcdd2017cf0df5d~80x80.awebp"
+    UserName = "Elysia"
+    UserDesc = "永远在学习路上奔波的码农"
+[system]
+    CdnURL = "http://localhost:8080/resource"
+    QiniuAccessKey = "fh-AhOh1ZEpmH11bvg7AW5tWNHAXOI8vRXdvgRKU"
+    QiniuSecretKey = "BGij81JZRkTnMNI-fWPlV9WV1n246yOkG92hsMfG"
+    Valine = true
+    ValineAppid = "nlqUg9SbHY99DFq5cg2PPz6Z-gzGzoHsz"
+    ValineAppkey = "RgeUgN5TfmDSA7zQgV6eX4Su"
+    ValineServerURL = "https://nlqug9sb.lc-cn-n1-shared.com"
+[redis]
+    Addr = "159.75.137.185:6379"
+    Password = "Elysia233"
+    DataBase = 2
