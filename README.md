@@ -3,8 +3,63 @@
 参考了B站一个[up](https://b23.tv/7hXiHkL)的视频做出来的（~~应该也是哪个开源项目~~），原项目很糙，简介展示有致命Bug和很多小功能没有去实现。web框架搭建上也比较混乱，当然刚学完Go拿这个练练手绝对ok的
 
 
+### 1. 项目展示
 
-### 简介展示Bug
+#### 1.1 首页
+
+![image-20240416171907061](C:\Users\mlp52\AppData\Roaming\Typora\typora-user-images\image-20240416171907061.png)
+
+
+
+#### 1.2 登陆页面
+
+![image-20240416171930560](C:\Users\mlp52\AppData\Roaming\Typora\typora-user-images\image-20240416171930560.png)
+
+
+
+#### 1.3 搜索功能
+
+![image-20240416172047008](C:\Users\mlp52\AppData\Roaming\Typora\typora-user-images\image-20240416172047008.png)
+
+
+
+#### 1.4 写作页面
+
+![image-20240416172305488](C:\Users\mlp52\AppData\Roaming\Typora\typora-user-images\image-20240416172305488.png)
+
+
+
+#### 1.5 支持图片上传
+
+后台设置好服务器路径，本地上传图片到服务器会回显在md图片地址栏
+
+![image-20240416172936195](C:\Users\mlp52\AppData\Roaming\Typora\typora-user-images\image-20240416172936195.png)
+
+
+
+#### 1.6 支持自定义类别展示
+
+![image-20240416173032990](C:\Users\mlp52\AppData\Roaming\Typora\typora-user-images\image-20240416173032990.png)
+
+
+
+#### 1.7 文章详情页面展示
+
+![image-20240416173150406](C:\Users\mlp52\AppData\Roaming\Typora\typora-user-images\image-20240416173150406.png)
+
+![image-20240416173209636](C:\Users\mlp52\AppData\Roaming\Typora\typora-user-images\image-20240416173209636.png)
+
+
+
+#### 1.8 整合文章评论区
+
+![image-20240416173259891](C:\Users\mlp52\AppData\Roaming\Typora\typora-user-images\image-20240416173259891.png)
+
+
+
+## 2. 原开源项目的Bug修正和项目补全
+
+#### 2. 1 简介展示Bug
 
 原代码关于简介是这样处理的
 
@@ -36,17 +91,17 @@ if len(content) >= 100 {
 
 
 
-### 基于Redis的计数器和IP访问次数限制器
+#### 2.2 基于Redis的计数器和IP访问次数限制器
 
 原项目的“观看次数”没有做，这边我打算使用Redis来实现我们的计数器，另外顺手也试试为这个项目加入一个防止用户恶意刷次数的IP访问次数限制。
 
-#### 为啥用Redis？
+##### 2.2.1 为啥用Redis？
 
 因为Redis6.0引入**多线程I/O**，只是用来**处理网络数据的读写和协议的解析**，而**执行命令依旧是单线程**，从实现机制可以看出，Redis 的多线程部分只是用来处理网络数据的读写和协议解析，执行命令仍然是单线程顺序执行。所以我们不需要去考虑控制 Key、Lua、事务，LPUSH/LPOP 等等的并发及线程安全问题。单个 Redis 命令的执行是原子性的。
 
 
 
-#### 关键代码
+##### 2.2.2 关键代码
 
 先要使用Redis，你需要将自己的Redis的ip和port，以及密码和选定的数据库编号填入`config.toml`
 
@@ -151,7 +206,7 @@ Redis提供的incr命令来实现计数器功能，内存操作，性能非常�
 
 
 
-### PS : 如何理解和使用rune？
+## PS : 如何理解和使用rune？
 
 首先，rune是什么？
 
