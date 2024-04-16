@@ -7,25 +7,25 @@
 
 #### 1.1 首页
 
-![image-20240416171907061](C:\Users\mlp52\AppData\Roaming\Typora\typora-user-images\image-20240416171907061.png)
+![image-20240416171907061](pictrues/image-20240416171907061.png)
 
 
 
 #### 1.2 登陆页面
 
-![image-20240416171930560](C:\Users\mlp52\AppData\Roaming\Typora\typora-user-images\image-20240416171930560.png)
+![image-20240416171930560](pictrues/image-20240416171930560.png)
 
 
 
 #### 1.3 搜索功能
 
-![image-20240416172047008](C:\Users\mlp52\AppData\Roaming\Typora\typora-user-images\image-20240416172047008.png)
+![image-20240416172047008](pictrues/image-20240416172047008.png)
 
 
 
 #### 1.4 写作页面
 
-![image-20240416172305488](C:\Users\mlp52\AppData\Roaming\Typora\typora-user-images\image-20240416172305488.png)
+![image-20240416172305488](pictrues/image-20240416172305488.png)
 
 
 
@@ -33,27 +33,27 @@
 
 后台设置好服务器路径，本地上传图片到服务器会回显在md图片地址栏
 
-![image-20240416172936195](C:\Users\mlp52\AppData\Roaming\Typora\typora-user-images\image-20240416172936195.png)
+![image-20240416172936195](pictrues/image-20240416172936195.png)
 
 
 
 #### 1.6 支持自定义类别展示
 
-![image-20240416173032990](C:\Users\mlp52\AppData\Roaming\Typora\typora-user-images\image-20240416173032990.png)
+![image-20240416173032990](pictrues/image-20240416173032990.png)
 
 
 
 #### 1.7 文章详情页面展示
 
-![image-20240416173150406](C:\Users\mlp52\AppData\Roaming\Typora\typora-user-images\image-20240416173150406.png)
+![image-20240416173150406](pictrues/image-20240416173150406.png)
 
-![image-20240416173209636](C:\Users\mlp52\AppData\Roaming\Typora\typora-user-images\image-20240416173209636.png)
+![image-20240416173209636](pictrues/image-20240416173209636.png)
 
 
 
 #### 1.8 整合文章评论区
 
-![image-20240416173259891](C:\Users\mlp52\AppData\Roaming\Typora\typora-user-images\image-20240416173259891.png)
+![image-20240416173259891](pictrues/image-20240416173259891.png)
 
 
 
